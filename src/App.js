@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 function App() {
     return (
         <div className="App">
-            <Typography>Поиск адреса с подсказками</Typography>
+            <Typography variant="h1">Поиск адреса с подсказками</Typography>
             <AddressInput/>
         </div>
     );

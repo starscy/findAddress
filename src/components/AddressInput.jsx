@@ -18,7 +18,8 @@ const AddressInput = () => {
     const [suggestions, setSuggestions] = useState([]);
     const [address, setAddress] = useState([]);
 
-    const token = '295393491c543aa9cf33bfe07a0537da13d92b37';
+    const token = process.env.REACT_APP_DADATA_TOKEN;
+    console.log('tokem', token)
     const url = 'http://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address';
 
     const fetchSuggestions = async (input) => {
